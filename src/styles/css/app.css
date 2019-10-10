@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+.btn {
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f05a5b;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+body {
+  background: #000 url("../../assets/background.jpg") no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+  position: relative;
+  width: 100%;
+}
+
+body, input, button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+input {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 1110px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+.container {
+  margin: 80px auto 0;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .content {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 30px;
+}
+.container .content > p {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.container .content form {
+  display: flex;
+  flex-direction: column;
+}
+.container .content form label {
+  font-size: 14px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.container .content form label#thumbnail {
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content form label#thumbnail input {
+  display: none;
+}
+.container .content form label#thumbnail.has-thumbnail {
+  border: 0;
+}
+.container .content form label#thumbnail.has-thumbnail img {
+  display: none;
+}
+.container .content form label span {
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
+}
+.container .content form input {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.container .content form .btn {
+  transition: all 0.5s;
+}
+.container .content form .btn:hover {
+  transition: all 0.5s;
+  background-color: #e15f50;
+}
+.container .content ul.spot-list {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+.container .content ul.spot-list li {
+  display: flex;
+  flex-direction: column;
+}
+.container .content ul.spot-list li header {
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  border-radius: 4px;
+}
+.container .content ul.spot-list li strong {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #444;
+}
+.container .content ul.spot-list li span {
+  font-size: 15px;
+  color: #999;
+}
+.container .content ul.notifications {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.container .content ul.notifications li {
+  font-size: 16px;
+  line-height: 24px;
+}
+.container .content ul.notifications li button {
+  margin-right: 10px;
+  border: 0;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container .content ul.notifications li button.aceept {
+  color: #84c870;
+}
+.container .content ul.notifications li button.reject {
+  color: #E55E5E;
+}
+
+/*# sourceMappingURL=app.css.map */

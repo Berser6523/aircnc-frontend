@@ -1,0 +1,203 @@
+@mixin box-shadow($value) {
+    box-shadow: $value;
+}
+
+@mixin line() {
+    width: 38px;
+    height: 0;
+    border: 1.5px solid #ff6ea9;
+    margin-bottom: 18px;
+}
+
+@mixin data {
+    color: $color-02;
+    font-family: $Muli;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+}
+
+@mixin centralizar() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin grid ($grid-01, $grid-02) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($grid-01, $grid-02));
+}
+
+@mixin title-mobile() {
+    font-size: 5vw;
+    line-height: normal;
+}
+
+@mixin line-center() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin line-between() {
+    display: flex;
+    justify-content: space-between
+}
+
+@mixin line-bottom() {
+    display: flex;
+    align-items: flex-end;
+}
+
+@mixin elements-row() {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin font-size-h1() {
+    $h1-1366: 52px;
+    $h1-1280: 48px;
+    $h1-1024: 45px;
+    $h1-768: 30px;
+    $h1-480: 46px;
+    $h1-375: 11.4vw;
+    $h1-320: 11.4vw;
+    font-size: 52px;
+    @media (max-width: 1366px) {
+        font-size: $h1-1366;
+    }
+    @media (max-width: 1280px) {
+        font-size: $h1-1280;
+    }
+    @media (max-width: 1024px) {
+        font-size: $h1-1024;
+    }
+    @media (max-width: 768px) {
+        font-size: $h1-768;
+    }
+    @media (max-width: 480px) {
+        font-size: $h1-480;
+        line-height: normal;
+    }
+    @media (max-width: 375px) {
+        font-size: $h1-375;
+    }
+    @media (max-width: 320px) {
+        font-size: $h1-320;
+    }
+}
+
+@mixin font-size-h1() {
+    $h2-1366: 52px;
+    $h2-1280: 52px;
+    $h2-1024: 52px;
+    $h2-768: 36px;
+    $h2-480: 8vw;
+    $h2-375: 8vw;
+    $h2-320: 8vw;
+    font-size: 52px;
+    @media (max-width: 1366px) {
+        font-size: $h2-1366;
+    }
+    @media (max-width: 1280px) {
+        font-size: $h2-1280;
+    }
+    @media (max-width: 1024px) {
+        font-size: $h2-1024;
+    }
+    @media (max-width: 768px) {
+        font-size: $h2-768;
+    }
+    @media (max-width: 480px) {
+        font-size: $h2-480;
+        line-height: normal;
+    }
+    @media (max-width: 375px) {
+        font-size: $h2-375;
+    }
+    @media (max-width: 320px) {
+        font-size: $h2-320;
+    }
+}
+
+@mixin font-size-h2() {
+    $h2-1366: 36px;
+    $h2-1280: 36px;
+    $h2-1024: 36px;
+    $h2-768: 36px;
+    $h2-480: 7.5vw;
+    $h2-375: 7.5vw;
+    $h2-320: 7.5vw;
+    font-size: 36px;
+    @media (max-width: 1366px) {
+        font-size: $h2-1366;
+    }
+    @media (max-width: 1280px) {
+        font-size: $h2-1280;
+    }
+    @media (max-width: 1024px) {
+        font-size: $h2-1024;
+    }
+    @media (max-width: 768px) {
+        font-size: $h2-768;
+    }
+    @media (max-width: 480px) {
+        font-size: $h2-480;
+        line-height: normal;
+    }
+    @media (max-width: 375px) {
+        font-size: $h2-375;
+    }
+    @media (max-width: 320px) {
+        font-size: $h2-320;
+    }
+}
+
+@mixin font-size-h3() {
+    $h3-1366: 23px;
+    $h3-1280: 23px;
+    $h3-1024: 23px;
+    $h3-768: 23px;
+    $h3-480: 5vw;
+    $h3-375: 5vw;
+    $h3-320: 5vw;
+    font-size: 23px;
+    @media (max-width: 1366px) {
+        font-size: $h3-1366;
+    }
+    @media (max-width: 1280px) {
+        font-size: $h3-1280;
+    }
+    @media (max-width: 1024px) {
+        font-size: $h3-1024;
+    }
+    @media (max-width: 768px) {
+        font-size: $h3-768;
+    }
+    @media (max-width: 480px) {
+        font-size: $h3-480;
+        line-height: normal;
+    }
+    @media (max-width: 375px) {
+        font-size: $h3-375;
+    }
+    @media (max-width: 320px) {
+        font-size: $h3-320;
+    }
+}
+
+@mixin tracinho($width, $height, $color, $top) {
+    &:before {
+        content: '';
+        display: block;
+        width: $width;
+        height: $height;
+        background-color: $color;
+        position: absolute;
+        top: $top;
+    }
+}
+
+@mixin elements-column() {
+    display: flex;
+    flex-direction: column;
+}
